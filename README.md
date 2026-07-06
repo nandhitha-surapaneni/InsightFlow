@@ -1,18 +1,19 @@
 # InsightFlow
 
-InsightFlow is an AI-powered data analytics platform that transforms raw datasets into interactive visualizations, actionable insights, predictive analytics, and automated business reports.
+AI-powered data analytics and business intelligence platform that automatically cleans datasets, performs statistical analysis, generates interactive visualizations, builds predictive models, and produces AI-generated business insights.
 
 ---
 
 ## Features
 
-- Upload and analyze datasets
-- Interactive dashboards
-- AI-generated insights & recommendations
-- KPI monitoring
-- Predictive analytics
-- Automated reporting
-- AI-powered data chat
+- Upload CSV datasets
+- Automatic data cleaning
+- Exploratory Data Analysis (EDA)
+- Interactive charts and visualizations
+- Machine Learning predictions
+- AI-generated business insights
+- Downloadable reports
+- Modern React dashboard
 
 ---
 
@@ -22,135 +23,140 @@ InsightFlow is an AI-powered data analytics platform that transforms raw dataset
 - React
 - TypeScript
 - Vite
+- Tailwind CSS
 
 ### Backend
-- Python
 - FastAPI
-
-### AI / Analytics
-- Machine Learning
-- Data Analysis
-- Predictive Modeling
-- LLM Integration
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Groq LLM
 
 ---
 
-## Project Structure
+# Project Structure
 
-```bash
+```
 InsightFlow/
 │
 ├── backend/
 │   ├── agents/
 │   ├── main.py
-│   └── .env
+│   ├── .env
+│   ├── venv/ (or .venv/)
+│   └── ...
 │
 ├── frontend/
-│   ├── src/
-│   ├── assets/
-│   ├── package.json
-│   ├── vite.config.ts
-│   └── index.html
 │
-├── update_data.py
 └── README.md
-```
-
----
-
-## Core Modules
-
-### Dashboard
-- KPI overview
-- Key metrics
-- Business summaries
-
-### Analytics
-- Trend analysis
-- Pattern recognition
-- Performance monitoring
-
-### AI Insights
-- Automated recommendations
-- Business intelligence
-- Decision support
-
-### Predictions
-- Forecast future trends
-- Predictive modeling
-- Growth estimation
-
-### Reports
-- Automated report generation
-- Exportable insights
-- Business summaries
-
----
-
-## Installation
-
-Clone repository:
-
-```bash
-git clone https://github.com/nandhitha-surapaneni/InsightFlow.git
-cd InsightFlow
 ```
 
 ---
 
 # Backend Setup
 
+## 1. Navigate to backend
+
 ```bash
 cd backend
-python -m venv venv
+```
+
+## 2. Activate the virtual environment
+
+If using `venv`
+
+```bash
 source venv/bin/activate
+```
+
+If using `.venv`
+
+```bash
+source .venv/bin/activate
+```
+
+## 3. Install dependencies
+
+If a `requirements.txt` file exists:
+
+```bash
 pip install -r requirements.txt
-uvicorn backend:app --reload
+```
+
+Otherwise install the required packages manually:
+
+```bash
+pip install fastapi uvicorn pandas numpy scikit-learn matplotlib python-dotenv
+```
+
+Install any additional packages used by your project if needed.
+
+## 4. Start the backend
+
+```bash
+uvicorn main:app --reload
+```
+
+Backend runs on
+
+```
+http://127.0.0.1:8000
 ```
 
 ---
 
 # Frontend Setup
 
+Navigate to the frontend folder
+
 ```bash
 cd frontend
+```
+
+Install dependencies
+
+```bash
 npm install
+```
+
+Start the development server
+
+```bash
 npm run dev
 ```
 
----
+Frontend runs on
 
-## Workflow
+```
+http://localhost:3000
+```
 
-1. Upload dataset  
-2. Backend processes and cleans data  
-3. Analytics engine generates insights  
-4. AI analyzes trends and patterns  
-5. Dashboard visualizes results  
-6. Predictions and reports are generated  
+(or the port shown in the terminal)
 
 ---
 
-## Use Cases
+# Workflow
 
-- Business Intelligence
-- Sales Analytics
-- Customer Insights
-- Market Analysis
-- Forecasting
-
----
-
-## Future Improvements
-
-- Better AI recommendations
-- Advanced forecasting models
-- Improved dashboards
-- Real-time analytics
-- Enhanced report generation
+1. Upload a CSV dataset
+2. Backend cleans the data
+3. AI agents analyze the dataset
+4. Statistical insights are generated
+5. Charts and visualizations are created
+6. Machine learning models generate predictions
+7. AI summarizes findings
+8. Dashboard displays complete results
 
 ---
 
-## Author
+# Future Improvements
 
-**Nandhitha Surapaneni**
+- Multiple dataset support
+- More ML algorithms
+- Export to PDF
+- User authentication
+- Cloud deployment
+- Database integration
+
+---
