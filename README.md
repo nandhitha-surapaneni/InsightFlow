@@ -85,12 +85,6 @@ If a `requirements.txt` file exists:
 pip install -r requirements.txt
 ```
 
-Otherwise install the required packages manually:
-
-```bash
-pip install fastapi uvicorn pandas numpy scikit-learn matplotlib python-dotenv
-```
-
 Install any additional packages used by your project if needed.
 
 ## 4. Start the backend
